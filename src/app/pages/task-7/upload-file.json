@@ -1,0 +1,38 @@
+{
+  "product_1": {
+    "name": "Product 1",
+    "price": "100 RUB"
+  },
+  "product_2": {
+    "name": "Product 2",
+    "price": "200 RUB"
+  },
+  "product_3": {
+    "name": "Product 3",
+    "price": "300 RUB"
+  },
+  "product_4": {
+    "name": "Product 4",
+    "price": "400 RUB"
+  },
+  "product_5": {
+    "name": "Product 5",
+    "price": "500 RUB"
+  },
+  "product_6": {
+    "name": "Product 6",
+    "price": "600 RUB"
+  },
+  "product_7": {
+    "name": "Product 7",
+    "price": "700 RUB"
+  },
+  "product_8": {
+    "name": "Product 8",
+    "price": "800 RUB"
+  },
+  "product_9": {
+    "name": "Product 9",
+    "price": "900 RUB"
+  }
+}

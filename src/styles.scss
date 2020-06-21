@@ -1,1 +1,194 @@
-/* You can add global styles to this file, and also import other style files */
+
+.app-toolbar {
+  .mat-toolbar {
+    justify-content: space-between;
+  }
+
+}
+
+.app-sidenav {
+  .mat-sidenav {
+    width: 280px;
+    padding: 15px;
+  }
+
+  .mat-drawer-backdrop {
+    background-color: rgba(0, 0, 0, .2);
+  }
+
+  .mat-drawer {
+
+    background-color: rgba(0, 0, 0, .8);
+  }
+
+  .navbar-link {
+    display: block;
+    color: #fff;
+    &:hover{
+      background-color: rgba(0, 0, 0, .8);
+    }
+  }
+}
+
+.task-content {
+  background-color: #def;
+  border: 1px solid #79a;
+  padding: 1em;
+}
+
+.note-content {
+  padding: .5em .5em .5em 2em;
+  color: #555;
+  font-style: italic;
+  background-color: #eee;
+}
+
+[name="test-textarea"] {
+  position: absolute;
+  background-color: rgba(255, 255, 0, .4);
+  z-index: 2;
+  transition: border-radius .5s, opacity .5s;
+}
+
+.to-hide {
+  opacity: 0;
+  border-radius: 50%;
+}
+
+.to-visible {
+  opacity: inherit;
+  border-radius: 0;
+}
+
+.test-result {
+  height: 2em;
+  background-color: #445;
+  padding: .5em;
+  color: #ff9;
+  margin-bottom: 1rem;
+
+  &-error {
+    background-color: #622;
+  }
+
+}
+
+.file-upload {
+
+  .container {
+    width: 450px;
+    height: 200px;
+    padding: 2rem;
+    text-align: center;
+    border: dashed 1px #979797;
+    position: relative;
+    margin: 0 auto;
+
+
+    label {
+      color: white;
+      width: 183px;
+      height: 44px;
+      border-radius: 21.5px;
+      background-color: #db202f;
+      padding: 8px 16px;
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+      color: #38424c;
+    }
+  }
+
+  .files-list {
+    margin-top: 1.5rem;
+
+    .single-file {
+      display: flex;
+      padding: 0.5rem;
+      justify-content: space-between;
+      align-items: center;
+      border: dashed 1px #979797;
+      margin-bottom: 1rem;
+
+      flex-grow: 1;
+
+      img.delete {
+        margin-left: 0.5rem;
+        cursor: pointer;
+        align-self: flex-end;
+      }
+
+
+      .name {
+        font-size: 14px;
+        font-weight: 500;
+        color: #353f4a;
+        margin: 0;
+      }
+
+      .size {
+        font-size: 12px;
+        font-weight: 500;
+        color: #a4a4a4;
+        margin: 0;
+        margin-bottom: 0.25rem;
+      }
+
+      .info {
+        width: 100%
+      }
+    }
+  }
+}
+
+.task-8 {
+  height: 70vh;
+  width: 100%;
+
+  &__sidebar {
+    //width: 30%;
+    //height: 100%;
+    padding: 1em;
+  }
+
+  &__content {
+    &-row {
+
+      padding: 1em;
+    }
+  }
+
+  &__textarea {
+    padding: 1em;
+  }
+}
+
+.textarea {
+  &__label {
+    display: block;
+  }
+
+  &__input {
+  }
+}
+
+.textarea-output {
+  &__label {
+
+  }
+
+  &__value {
+    min-width: 3em;
+    padding: 1em;
+    background-color: #ffd;
+    border: 1px solid #dd9;
+  }
+}
+
+
+.task-9 {
+  display: block;
+  height: 90vh;
+}

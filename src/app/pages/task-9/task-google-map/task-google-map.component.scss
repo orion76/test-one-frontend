@@ -1,0 +1,32 @@
+.google-map {
+  //position: absolute;
+  display: block;
+  height: 95%;
+  width: 95%;
+}
+
+.map-info {
+  position: absolute;
+  bottom: 10%;
+  right: 15%;
+  background-color: #ff9;
+  border: 2px solid #aa6;
+  padding: .5em;
+
+  &__item {
+    display: flex;
+    width: 20em;
+    &-label {
+      font-weight: bold;
+      width: 12em;
+    }
+
+    &-value {
+      width: 7em;
+    }
+
+    &-unit {
+      width: 3em;
+    }
+  }
+}
