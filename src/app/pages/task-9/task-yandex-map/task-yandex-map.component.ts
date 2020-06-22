@@ -1,10 +1,10 @@
 import {AfterViewInit, Component, ElementRef, NgModule, OnInit, ViewChild} from '@angular/core';
-import {GoogleMapsModule} from '@angular/google-maps';
+
 import {CommonModule} from '@angular/common';
 import {AngularYandexMapsModule} from 'angular8-yandex-maps';
 import ymaps from 'ymaps';
 import {YandexMap} from './yandex-map/map';
-import {IPolygon, TPolygonCoordinates} from './yandex-map/geo-objects/polygon';
+import {IPolygon} from './yandex-map/geo-objects/polygon';
 import {calculateArea} from './yandex-map/utils/calculate-area';
 
 const POLYGON_PATH: any =
@@ -131,7 +131,6 @@ export class TaskYandexMapComponent implements OnInit, AfterViewInit {
 @NgModule({
   imports: [
     CommonModule,
-    GoogleMapsModule,
     AngularYandexMapsModule
   ],
   exports: [TaskYandexMapComponent],
