@@ -13,7 +13,7 @@ export class DataService {
   }
 
 prepareUrl(url):string{
-  return`${this.document.domain}:8080${url}`;
+  return`http://${this.document.domain}:8080${url}`;
 }
 
   get(url: string): Observable<any> {
