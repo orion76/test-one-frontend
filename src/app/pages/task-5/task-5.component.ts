@@ -56,7 +56,7 @@ export class Task5Component implements OnInit {
   }
 
   loadData($name) {
-    this.dataService.get('/backend/task-5/' + $name).toPromise().then((response) => {
+    this.dataService.get('/task-5/' + $name).toPromise().then((response) => {
       this[$name] = response.table;
     })
   }

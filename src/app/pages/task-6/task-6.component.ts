@@ -50,7 +50,7 @@ export class Task6Component implements OnInit {
   }
 
   loadData() {
-    this.dataService.get('/backend/task-6').toPromise().then((response) => {
+    this.dataService.get('/task-6').toPromise().then((response) => {
       this.result = response.table;
     })
   }

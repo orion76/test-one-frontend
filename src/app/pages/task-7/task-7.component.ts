@@ -54,7 +54,7 @@ export class Task7Component implements OnInit {
 
   uploadFiles(form: FormData) {
 
-    this.dataService.post('/backend/task-7', form).toPromise().then((response) => {
+    this.dataService.post('/task-7', form).toPromise().then((response) => {
       this.result = response.result;
     })
   }

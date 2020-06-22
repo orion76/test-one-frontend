@@ -57,7 +57,7 @@ export class Task4Component implements OnInit {
   }
 
   methodRun(methodName: string) {
-    this.dataService.get('/backend/task-4/' + methodName).toPromise().then((response) => {
+    this.dataService.get('/task-4/' + methodName).toPromise().then((response) => {
       this.result = response.result;
       this.responseError = this.result === 'Error'
     })
