@@ -19,7 +19,7 @@ const routes: Routes = [
   {path: 'task-3', component: Task3Component},
   {path: 'task-4', component: Task4Component},
   {path: 'task-5', component: Task5Component},
-  {path: 'task-6', component: Task6Component},
+  // {path: 'task-6', component: Task6Component},
   {path: 'task-7', component: Task7Component},
   {path: 'task-8', component: Task8Component},
   {path: 'task-9', component: Task9Component},

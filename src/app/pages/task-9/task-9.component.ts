@@ -9,6 +9,7 @@ import {DATA_SERVICE, DataService} from '../../services/data.service';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {TaskGoogleMapModule} from './task-google-map/task-google-map.component';
+import {TaskYandexMapModule} from './task-yandex-map/task-yandex-map.component';
 
 @Component({
   selector: 'task-9',
@@ -30,7 +31,7 @@ import {TaskGoogleMapModule} from './task-google-map/task-google-map.component';
     <h3>Решение:</h3>
     <mat-card>
       <mat-card-content>
-        <task-google-map class="task-9"></task-google-map>
+        <task-yandex-map class="task-9"></task-yandex-map>
       </mat-card-content>
     </mat-card>
   `
@@ -67,7 +68,7 @@ export class Task9Component implements OnInit {
     CommonModule,
     MatFormFieldModule,
     MatInputModule,
-    TaskGoogleMapModule
+    TaskYandexMapModule
   ],
   exports: [Task9Component],
   declarations: [Task9Component],

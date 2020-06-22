@@ -35,7 +35,7 @@ import {AppSidenavModule} from './navigation/app-sidenav/app-sidenav.component';
     Task3Module,
     Task4Module,
     Task5Module,
-    Task6Module,
+    // Task6Module,
     Task7Module,
     Task8Module,
     Task9Module,
