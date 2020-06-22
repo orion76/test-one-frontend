@@ -90,7 +90,7 @@ export class TaskYandexMapComponent implements OnInit, AfterViewInit {
 
     setTimeout(() => this.setOutput(maps, polygon), 0);
 
-    polygon.editor.startEditing();
+
 
     return polygon;
   }
@@ -106,6 +106,7 @@ export class TaskYandexMapComponent implements OnInit, AfterViewInit {
 
         this.polygon = this.createPolygon(maps);
         this.map.geoObjects.add(this.polygon);
+        this.polygon.editor.startEditing();
       })
       .catch(error => console.log('Failed to load Yandex Maps', error));
   }
