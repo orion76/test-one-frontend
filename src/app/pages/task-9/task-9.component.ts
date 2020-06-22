@@ -8,7 +8,7 @@ import {CommonModule} from '@angular/common';
 import {DATA_SERVICE, DataService} from '../../services/data.service';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
-import {TaskGoogleMapModule} from './task-google-map/task-google-map.component';
+
 import {TaskYandexMapModule} from './task-yandex-map/task-yandex-map.component';
 
 @Component({
