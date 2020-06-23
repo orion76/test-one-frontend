@@ -21,8 +21,8 @@ import {LinkModule} from '../../components/link.component';
 
       </mat-card-content>
       <mat-card-footer>
-        <div class="link-code">Code:
-          <ext-link [link]="taskInfo.linkCode"></ext-link>
+        <div class="link-code">Source code:
+          <ext-link *ngFor="let link of taskInfo.linkCode" [link]="link"></ext-link>
         </div>
       </mat-card-footer>
     </mat-card>
@@ -101,7 +101,6 @@ export class Task1Component implements OnInit, OnDestroy {
       try {
         const obj = JSON5.parse(this.dataObjFlip);
         const result = obj_flip(obj);
-        console.log('[obj_flip(obj)]', result);
         this.resultObjFlip = JSON5.stringify(result);
       } catch (err) {
         this.resultObjFlip = err;
@@ -121,7 +120,6 @@ export class Task1Component implements OnInit, OnDestroy {
       const arr = JSON5.parse(this.dataArrayFlip);
       try {
         const result = arr.flip();
-        console.log('[array_flip(obj)]', result);
         this.resultArrayFlip = JSON5.stringify(result);
       } catch (err) {
         this.resultArrayFlip = err;

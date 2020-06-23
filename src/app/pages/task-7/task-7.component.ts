@@ -24,8 +24,8 @@ import {DragAndDropFileUploadModule} from '../../components/drag-and-drop-file-u
 
       </mat-card-content>
       <mat-card-footer>
-        <div class="link-code">Code:
-          <ext-link [link]="taskInfo.linkCode"></ext-link>
+        <div class="link-code">Source code:
+          <ext-link *ngFor="let link of taskInfo.linkCode" [link]="link"></ext-link>
         </div>
       </mat-card-footer>
     </mat-card>

@@ -19,8 +19,8 @@ import {SCRIPT_LOAD_SERVICE, ScriptLoadService} from '../../services/script-load
 
       </mat-card-content>
       <mat-card-footer>
-        <div class="link-code">Code:
-          <ext-link [link]="taskInfo.linkCode"></ext-link>
+        <div class="link-code">Source code:
+          <ext-link *ngFor="let link of taskInfo.linkCode" [link]="link"></ext-link>
         </div>
       </mat-card-footer>
     </mat-card>
@@ -46,7 +46,6 @@ export class Task2Component implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    console.log(this.textarea);
     this.scriptLoader.loaded([
       '/assets/js/task-2.js',
     ]).toPromise().then(() => {

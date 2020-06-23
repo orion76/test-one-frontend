@@ -1,4 +1,4 @@
-import {Component, Input, NgModule, OnInit} from '@angular/core';
+import {Component, HostBinding, Input, NgModule, OnInit} from '@angular/core';
 import {RouterModule} from '@angular/router';
 import {CommonModule} from '@angular/common';
 
@@ -11,7 +11,7 @@ export interface ILink {
 @Component({
   selector: 'ext-link',
   template: `
-    <a *ngIf="link.external; else linkInternal" [href]="link.url"
+    <a *ngIf="link.external; else linkInternal" [href]="link.url" [target]="linkTarget(link)"
        class="task-demo-link">{{link.label}}</a>
     <ng-template #linkInternal>
       <a [routerLink]="link.url" class="task-code-link">{{link.label}}</a>
@@ -21,11 +21,17 @@ export interface ILink {
 export class LinkComponent implements OnInit {
   @Input() link: ILink;
 
+  @HostBinding('class.ext-link') hostClass = true;
+
   constructor() {
   }
 
+  linkTarget(link: ILink) {
+    return link.external ? '_blank' : '_self';
+  }
+
   ngOnInit() {
-    console.log(this.link);
+
   }
 }
 

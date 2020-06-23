@@ -14,8 +14,8 @@ import {LinkModule} from '../../components/link.component';
         <div class="task-content">
           <p *ngFor="let paragraph of info.content">{{paragraph}}</p>
         </div>
-        <div class="link-code">Code:
-          <ext-link [link]="info.linkCode"></ext-link>
+        <div class="link-code">Source code:
+          <ext-link *ngFor="let link of info.linkCode" [link]="link"></ext-link>
         </div>
         <div class="link-demo">Demo:
           <ext-link [link]="info.linkDemo"></ext-link>
@@ -32,6 +32,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
+
   }
 }
 

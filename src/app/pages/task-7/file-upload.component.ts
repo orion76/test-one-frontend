@@ -45,8 +45,7 @@ export class FileUploadComponent {
 
   deleteFile(index: number) {
     if (this.files[index].progress < 100) {
-      console.log('Upload in progress.');
-      return;
+       return;
     }
     this.files.splice(index, 1);
   }

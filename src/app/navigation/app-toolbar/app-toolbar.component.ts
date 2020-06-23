@@ -19,7 +19,9 @@ import {MatSidenav} from '@angular/material/sidenav';
         <mat-icon>home</mat-icon>
         Home
       </button>
-      <button mat-button (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></button>
+      <button mat-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
     </mat-toolbar>
     <!--      <button mat-fab (click)="toolbarToggle()" class="button-toolbar-toggle">-->
     <!--        <div class="button-arrow"></div>-->
@@ -40,13 +42,8 @@ export class AppToolbarComponent implements OnInit {
 
   ngOnInit() {
 
-
   }
 
-
-  debug(...vars: any[]) {
-    console.log('toolbar', ...vars);
-  }
 }
 
 
